@@ -12,8 +12,8 @@ app.use(express.json()) // req.body
 app.use(cookieParser()) // req.cookies
 app.use(express.static("dist"))
 app.use(cors({
-    // origin: "https://websocket-todo.onrender.com",
-    origin: true,
+    origin: "http://localhost:19006",
+    // origin: true,
     credentials: true
 }))
 
