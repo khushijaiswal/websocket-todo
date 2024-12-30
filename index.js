@@ -13,7 +13,7 @@ app.use(cookieParser()) // req.cookies
 app.use(express.static("dist"))
 app.use(cors({
     // origin: "https://websocket-todo.onrender.com",
-    // origin: "*",
+    origin: true,
     credentials: true
 }))
 
